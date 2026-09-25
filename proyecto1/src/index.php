@@ -12,6 +12,10 @@ use Phroute\Phroute\RouteCollector;
         return 'Estas intentando acceder a la funcion de admin';
     });
 
+    $router->get('/', function(){
+        return include_once "app/Views/fronted/code.php";
+    });
+
     $dispatcher = new Phroute\Phroute\Dispatcher($router->getData());
 
     try{
