@@ -8,6 +8,13 @@ use Phroute\Phroute\Exception\HttpRouteNotFoundException;
 use Phroute\Phroute\RouteCollector;
 
     $router = new RouteCollector();
+
+    $router->get('/obtener-passwd', function(){
+       include_once  "ejemplos/funciones.php";
+       echo create_pass();
+    });
+
+//Rutas del backend
     $router->get('/admin', function(){
         return 'Estas intentando acceder a la funcion de admin';
     });
