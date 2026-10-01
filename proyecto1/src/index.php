@@ -14,6 +14,22 @@ use Phroute\Phroute\RouteCollector;
        echo create_pass();
     });
 
+// DIA DE HOY 1-10-2026
+$router -> get('/movie/add', function(){
+    include_once "app/Views/backend/admin.movie.new.php";
+});
+
+$router -> post('/movie', function(){
+  //Que hacemos con los datos de la pelicula
+    var_dump($_POST);
+    var_dump($_FILES);
+
+});
+
+
+
+
+
 //Rutas del backend
     $router->get('/admin', function(){
         return 'Estas intentando acceder a la funcion de admin';
