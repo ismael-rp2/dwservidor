@@ -1,5 +1,21 @@
 {
+    "name": "Ismael/proyecto1",
+    "description": "Proyecto",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ismael\\proyecto1\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ismael"
+        }
+    ],
+    "minimum-stability": "stable",
     "require": {
-        "phroute/phroute": "^2.2"
+        "phroute/phroute": "^2.2",
+        "ramsey/uuid": "^4.9.4"
     }
 }
