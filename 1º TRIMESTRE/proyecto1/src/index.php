@@ -6,6 +6,8 @@
 
 use Phroute\Phroute\Exception\HttpRouteNotFoundException;
 use Phroute\Phroute\RouteCollector;
+use Ismael\Proyecto1\Controllers\UserController;
+use Ismael\Proyecto1\Controllers\PeliculaController;
 
     $router = new RouteCollector();
 
@@ -33,7 +35,25 @@ $router -> post('/movie', function(){
 //-------------------------------------------------------------------------------------------
 
 
-//Rutas del backend
+
+$router = new RouteCollector();
+
+//RUTAS DE USUARIO
+$router -> get('/register',[UserController::class,'create']);
+$router -> get('/user/{id}/edit',[UserController::class,'edit']);
+$router -> get('/user', [UserController::class, 'index']);
+$router -> get('/user/{id}', [UserController::class, 'show']);
+$router -> post('/user', [UserController::class, 'store']);
+$router -> put('/user/{id}', [UserController::class, 'update']);
+$router -> delete('/user', [UserController::class, 'destroy']);
+
+
+
+
+
+
+/*
+Rutas de ejemplos
     $router->get('/admin', function(){
         return include_once "./app/Views/backend/admin.index.php";
         //return 'Estas intentando acceder a la funcion de admin';
@@ -42,7 +62,7 @@ $router -> post('/movie', function(){
     $router->get('/', function(){
         return include_once "app/Views/fronted/code.php";
     });
-
+*/
     $dispatcher = new Phroute\Phroute\Dispatcher($router->getData());
 
     try{
