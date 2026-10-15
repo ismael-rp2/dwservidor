@@ -1,39 +1,14 @@
-<html>
-<head>
-    <title>Insertar una nueva película</title>
-</head>
-<body>
-    <main>
-        <form method="POST" action="/movie" enctype="multipart/form-data">
-            <label for="inputTitulo">Titulo de la pelicula</label>
-            <input type="text" id="inputTitulo" name="titulo"><br><br>
+<?php
+include_once "templates/header.php";
+include_once "templates/sidebar.php";
+?>
+    <div class="flex-1 flex flex-col min-w-0 bg-[#0A0E17]">
+        <?php include_once "templates/main.title.php"; ?>
+        <main class="p-6 lg:p-8 space-y-6 max-w-[1600px] w-full mx-auto">
 
-            <label for="inputDuracion">Duración de la pelicula</label>
-            <input type="number" id="inputDuracion" name="duracion"><br><br>
+            <h2 class="text-white text-2xl font-bold">Crear Nuevo Contenido</h2>
+            <!-- AQUÍ IRÍA TU FORMULARIO EN BLANCO Y ROJO -->
 
-            <label for="inputDescripcion">Descripción de la pelicula</label>
-            <textarea type="text" id="inputDescripcion" name="descripcion" rows="5" cols="20"></textarea><br><br>
-
-            <label for="inputPortada">Insertar imagen de la portada</label>
-            <input type="file" id="inputPortada" name="portada"><br><br>
-
-            <select id="optionCategotia" name="categoria">
-                <option>Todos los publicos</option>
-                <option>+16</option>
-                <option>+18</option>
-            </select><br><br>
-
-            <input type="checkbox" id="inputGenero" name="genero[]" value="comedia">;
-            <label for="optionGeneroComedia>">Comedia</label>
-            <input type="checkbox" id="inputGenero" name="genero[]" value="drama">;
-            <label for="optionGeneroComedia>">Drama</label>
-            <input type="checkbox" id="inputGenero" name="genero[]" value="terror">;
-            <label for="optionGeneroComedia>">Terror</label>
-
-            <br><br><input type="submit">
-
-        </form>
-    </main>
-
-</body>
-</html>
+        </main>
+    </div>
+<?php include_once "templates/footer.php"; ?>
