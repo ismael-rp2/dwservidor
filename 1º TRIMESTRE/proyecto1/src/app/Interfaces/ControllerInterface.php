@@ -1,6 +1,6 @@
 <?php
 
-namespace Ismael\proyecto1\Interfaces;
+namespace Ismael\Proyecto1\Interfaces;
 
 interface ControllerInterface
 {
@@ -10,12 +10,19 @@ interface ControllerInterface
     //Ver un solo usuario
     public function show(int $id);
 
-    //Crear un usuario
+    //Mostrar formulario para crear un usuario
     public function create();
 
-    //Modificar un usuario
-    public function upadte(int $id);
+    //Recibir datos de un usuario
+    public function store();
+
+    //Modificar los datos un usuario
+    public function update(int $id);
+
+    //Es el que te muestra el formulario para modificar los datos del usuario
+    public function edit(int $id);
 
     //Borrar un usuario
-    public function delete(int $id);
+    public function destroy(int $id);
+
 }

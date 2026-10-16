@@ -1,6 +1,6 @@
 <?php
 
-namespace Ismael\proyecto1\Class;
+namespace Ismael\Proyecto1\Class;
 
 class Content
 {

@@ -1,11 +1,11 @@
 {
-    "name": "Ismael/proyecto1",
+    "name": "ismael/proyecto1",
     "description": "Proyecto",
     "type": "project",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Ismael\\proyecto1\\": "app/"
+            "Ismael\\Proyecto1\\": "app/"
         }
     },
     "authors": [

@@ -1,8 +1,8 @@
 <?php
 
-namespace Ismael\proyecto1\Class;
+namespace Ismael\Proyecto1\Class;
 
-class User
+class User implements \JsonSerializable
 {
     //Propiedades
     private int $id;
@@ -107,4 +107,8 @@ class User
     }
 
 
+    public function jsonSerialize(): mixed
+    {
+        // TODO: Implement jsonSerialize() method.
+    }
 }

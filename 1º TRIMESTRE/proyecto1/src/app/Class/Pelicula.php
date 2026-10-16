@@ -1,6 +1,6 @@
 <?php
 
-namespace Ismael\proyecto1\Class;
+namespace Ismael\Proyecto1\Class;
 
 use Ismael\proyecto1\Class\Content;
 use Ismael\proyecto1\Enums\MovieClassification;
