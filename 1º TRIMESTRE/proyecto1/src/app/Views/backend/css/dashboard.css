@@ -1,7 +1,0 @@
-::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: #090d14; }
-::-webkit-scrollbar-thumb { background: #1f2633; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #2b3547; }
-.donut-slice-series { stroke-dasharray: 54 46; stroke-dashoffset: 25; }
-.donut-slice-films { stroke-dasharray: 32 68; stroke-dashoffset: -29; }
-.donut-slice-games { stroke-dasharray: 14 86; stroke-dashoffset: -61; }
